@@ -1,6 +1,7 @@
 header {
   height: 70px;
   color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
 
 nav h1 {

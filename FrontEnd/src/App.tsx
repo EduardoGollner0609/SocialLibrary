@@ -4,6 +4,7 @@ import HomePage from "./routes/HomePage";
 import LoginPage from "./routes/LoginPage";
 import MoreDetails from "./routes/MoreDetails";
 import RegisterPage from "./routes/RegisterPage";
+import SocialPage from "./routes/SocialPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         </Route>
 
         <Route path="register" element={<RegisterPage />} />
+        <Route path="social" element={<SocialPage />} />
       </Routes>
     </BrowserRouter>
   );

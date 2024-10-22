@@ -1,0 +1,82 @@
+.slidebar {
+  position: absolute;
+  width: 60px;
+  height: 100vh;
+  background-color: var(--color-tertiary);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.logo-space {
+  min-width: 60px;
+  height: 100px;
+  position: relative;
+}
+
+.logo-title {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5px;
+  color: var(--color-secondary);
+}
+
+.slidebar:hover {
+  width: 300px;
+}
+
+.slidebar:hover .logo-title {
+  opacity: 1;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.slidebar ul {
+  position: relative;
+  height: 100vh;
+}
+
+.list-item:hover {
+  background: var(--color-quartiary);
+}
+
+.slidebar ul li a {
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+}
+
+.slidebar ul li a .icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+}
+
+.slidebar ul li a .text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  font-size: 1rem;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
