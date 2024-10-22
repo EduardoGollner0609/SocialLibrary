@@ -1,5 +1,15 @@
+import imgAnimatedHomePage from "../../assets/AnimatedHomePage.svg";
+import CardLogin from "../../components/CardLogin";
+
 export default function LoginPage() {
-    return (
-        <h1>Login</h1>
-    );
+  return (
+    <section>
+      <div>
+        <img src={imgAnimatedHomePage} alt="" />
+      </div>
+      <div>
+      <CardLogin />
+      </div>
+    </section>
+  );
 }
