@@ -1,9 +1,19 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Header from "./components/Header";
+import HomePage from "./routes/HomePage";
+import LoginPage from "./routes/LoginPage";
+import MoreDetails from "./routes/MoreDetails";
 
 function App() {
   return (
-    <Header />
+<BrowserRouter>
+<Routes>
+  <Route path="/" element={<HomePage />}>
+<Route index element={<LoginPage />} />
+<Route path="/more-details" element={<MoreDetails />} />
+  </Route>
+</Routes>
+</BrowserRouter>
   );
 }
 
