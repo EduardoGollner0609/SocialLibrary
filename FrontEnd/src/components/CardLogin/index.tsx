@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 export default function CardLogin() {
@@ -16,7 +17,7 @@ export default function CardLogin() {
         </div>
 
         <button className="btn-login">Login</button>
-          <a href="">Clique aqui para se cadastrar.</a>
+        <Link to="/register">Clique aqui para se cadastrar.</Link>
       </div>
     </div>
   );

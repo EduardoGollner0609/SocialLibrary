@@ -31,8 +31,8 @@ export default function CardRegister() {
           placeholder="Digite sua senha"
           required
         />
+              <p>A senha deve conter entre 6 a 30 caracteres.</p>
       </div>
-
       <button className="btn-register">Cadastrar</button>
     </div>
   );

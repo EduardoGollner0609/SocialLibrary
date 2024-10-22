@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CardRegister from "../../components/CardRegister";
 import "./styles.css";
 
@@ -6,7 +7,9 @@ export default function RegisterPage() {
     <>
       <header>
         <nav>
-          <h1>Social Library</h1>
+          <Link to="/">
+            <h1>Social Library</h1>
+          </Link>
         </nav>
       </header>
       <main>

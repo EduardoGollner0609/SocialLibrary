@@ -21,11 +21,25 @@
 }
 
 .btn-register {
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 10px;
   border-radius: 10px;
   border: none;
   background-color: var(--color-secondary);
   color: var(--color-primary);
   cursor: pointer;
+}
+
+.card-register .textfield:nth-child(4) {
+  border-bottom: none
+}
+
+.card-register .textfield:nth-child(4) input {
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+@media(min-height:900px) {
+  .card-register {
+    height: 490px;
+  }
 }
