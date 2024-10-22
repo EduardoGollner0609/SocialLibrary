@@ -1,13 +1,17 @@
 header {
   height: 70px;
+  color: var(--color-secondary);
 }
 
+.icon {
+  fill: var(--color-secondary);
+}
 nav h1 {
   font-size: 28px;
   border-bottom: 2px solid var(--color-secondary);
 }
 
-nav a:hover {
+header a:hover {
   border-bottom: 2px solid var(--color-secondary);
   transition: 0.1s;
   font-size: 20px;
@@ -20,7 +24,6 @@ nav {
   justify-content: space-around;
   height: 100%;
   margin: 0 auto;
-  color: var(--color-secondary);
 }
 
 nav ul {
@@ -28,3 +31,48 @@ nav ul {
   gap: 20px;
   font-size: 18px;
 }
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .nav-item {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+    display: flex;
+    align-items: center;
+  }
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+  .mobile-menu a {
+    transition: 0.3s;
+  }
+  .open {
+    display: block;
+  }
+
+  nav h1 {
+    font-size: 26px;
+}
+}
+
