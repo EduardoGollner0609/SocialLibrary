@@ -1,5 +1,9 @@
 export default function Header() {
     return (
-        <h1>Header</h1>
+   <header>
+    <nav>
+        <h1>SocialLibrary</h1>
+    </nav>
+   </header>
     );
 }
