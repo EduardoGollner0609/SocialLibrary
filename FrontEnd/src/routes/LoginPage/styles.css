@@ -1,16 +1,49 @@
 #section-login-page {
-  margin: 20px 0;
+  padding: 20px;
   display: flex;
 }
 
-#login-page-left {
-    height: 80vh;
-    width: 50vw;
-    display: flex;
-justify-content: center;
-align-items: center;
+.login-page-left {
+  height: 80vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#section-login-page img {
-  max-height: 600px;
+.login-page-left img {
+  width: 70%;
+  min-width: 450px;
 }
+
+.login-page-left h3 {
+  color: var(--color-secondary);
+  text-transform: uppercase;
+}
+
+.login-page-right {
+  width: 50vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 850px) {
+  .login-page-left {
+    display: none;
+  }
+
+  #section-login-page {
+    justify-content: center;
+  }
+}
+
+
+
+@media (max-height: 400px) {
+#section-login-page {
+    display: none;
+}
+  }
