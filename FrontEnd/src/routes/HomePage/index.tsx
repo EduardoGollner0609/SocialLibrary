@@ -5,7 +5,9 @@ export default function HomePage() {
   return (
     <>
       <Header />
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 }
