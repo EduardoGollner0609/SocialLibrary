@@ -1,0 +1,30 @@
+header {
+  height: 70px;
+}
+
+nav h1 {
+  font-size: 28px;
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+nav a:hover {
+  border-bottom: 2px solid var(--color-secondary);
+  transition: 0.1s;
+  font-size: 20px;
+}
+
+nav {
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  margin: 0 auto;
+  color: var(--color-secondary);
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
