@@ -3,6 +3,7 @@ import "./App.css";
 import HomePage from "./routes/HomePage";
 import LoginPage from "./routes/LoginPage";
 import MoreDetails from "./routes/MoreDetails";
+import RegisterPage from "./routes/RegisterPage";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
           <Route index element={<LoginPage />} />
           <Route path="more-details" element={<MoreDetails />} />
         </Route>
+
+        <Route path="register" element={<RegisterPage />} />
       </Routes>
     </BrowserRouter>
   );

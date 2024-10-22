@@ -10,7 +10,7 @@ export default function RegisterPage() {
         </nav>
       </header>
       <main>
-        <section>
+        <section id="section-register">
           <CardRegister />
         </section>
       </main>

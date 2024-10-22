@@ -5,7 +5,7 @@ export default function CardRegister() {
     <div className="card-register">
       <div className="textfield">
         <label htmlFor="nome">Nome</label>
-        <input type="text" name="nome" placeholder="Nome Completo" />
+        <input type="text" name="nome" placeholder="Nome Completo" required />
       </div>
 
       <div className="textfield">
@@ -15,15 +15,25 @@ export default function CardRegister() {
 
       <div className="textfield">
         <label htmlFor="email">Email</label>
-        <input type="text" name="email" placeholder="Digite seu email" />
+        <input
+          type="text"
+          name="email"
+          placeholder="Digite seu email"
+          required
+        />
       </div>
 
       <div className="textfield">
-        <label htmlFor="senha">Nome</label>
-        <input type="password" name="senha" placeholder="Digite sua senha" />
+        <label htmlFor="senha">Senha</label>
+        <input
+          type="password"
+          name="senha"
+          placeholder="Digite sua senha"
+          required
+        />
       </div>
 
-      <button>Cadastrar</button>
+      <button className="btn-register">Cadastrar</button>
     </div>
   );
 }

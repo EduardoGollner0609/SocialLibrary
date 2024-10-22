@@ -1,0 +1,13 @@
+#section-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 80vh;
+   padding: 20px;
+}
+
+@media(max-height: 440px) {
+    #section-register {
+display: none;
+    }
+}
