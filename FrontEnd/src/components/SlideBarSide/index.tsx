@@ -25,7 +25,7 @@ export default function SlideBarSide() {
             <span className="icon">
             <ion-icon name="search-outline"></ion-icon>
             </span>
-            <span className="text">Search</span>
+            <span className="text">Pesquisa</span>
           </NavLink>
         </li>
 

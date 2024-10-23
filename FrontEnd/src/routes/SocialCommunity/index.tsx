@@ -1,5 +1,4 @@
 import CardCommunity from "../../components/CardCommunity";
-import CardPeople from "../../components/CardPeople";
 import SearchBar from "../../components/SearchBar";
 import "./styles.css";
 
