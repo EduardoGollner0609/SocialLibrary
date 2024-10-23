@@ -166,3 +166,10 @@
     max-width: 430px;
   }
 }
+
+@media(max-width: 996px) {
+  .card-people-details {
+    height: 90vh;
+    max-height: 680px;
+  }
+}

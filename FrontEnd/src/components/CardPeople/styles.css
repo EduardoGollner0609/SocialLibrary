@@ -25,3 +25,10 @@
     width: 400px;
   }
 }
+
+@media(max-width: 996px) {
+  .card-people {
+      padding: 10px 15px;
+    width: 350px;
+  }
+}

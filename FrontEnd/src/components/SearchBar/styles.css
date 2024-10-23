@@ -40,3 +40,12 @@
     min-width: 365px;
   }
 }
+
+@media(max-width: 996px) {
+.search-bar {
+justify-content: center;
+}
+  .search-bar input {
+    min-width: 280px;
+  }
+}

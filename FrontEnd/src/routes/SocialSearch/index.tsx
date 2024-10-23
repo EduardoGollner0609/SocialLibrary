@@ -6,7 +6,7 @@ import "./styles.css";
 export default function SocialHome() {
   return (
     <main>
-      <section id="section-social-seacrh">
+      <section id="section-social-search">
         <div className="box-title">
           <h1>Pesquisa</h1>
         </div>
@@ -18,8 +18,6 @@ export default function SocialHome() {
           <div className="social-search-search">
             <h2>Pesquisa</h2>
             <SearchBar />
-            <CardPeople />
-            <CardPeople />
             <CardPeople />
             <CardPeople />
             <CardPeople />
