@@ -1,4 +1,5 @@
 import CardPeople from "../../components/CardPeople";
+import PeopleDetails from "../../components/PeopleDetails";
 import SearchBar from "../../components/SearchBar";
 import "./styles.css";
 
@@ -11,7 +12,7 @@ export default function SocialHome() {
         </div>
         <div className="social-search-description-and-search">
           <div className="social-search-description">
-            <h1>Procure amigos do mundo todo!</h1>
+            <PeopleDetails />
           </div>
 
           <div className="social-search-search">
