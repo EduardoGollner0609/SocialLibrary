@@ -14,7 +14,9 @@ export default function RegisterPage() {
       </header>
       <main>
         <section id="section-register">
-          <CardRegister />
+          <div className="register-content">
+            <CardRegister />
+          </div>
         </section>
       </main>
     </>
