@@ -75,14 +75,13 @@
 
 @media(max-width: 650px) {
   .card-login {
-   min-width: 120%;
+   min-width: 130%;
   }
 }
 
 @media(max-width: 576px) {
   .card-login {
-   min-width: 150%;
-   min-height: 320px;
+    min-width: 130%;
   }
   .card-login h1 {
     margin-bottom: 15px;

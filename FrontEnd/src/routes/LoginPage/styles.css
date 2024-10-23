@@ -1,5 +1,6 @@
 #section-login-page {
   display: flex;
+  margin: 20px 0;
 }
 
 .login-page-left {
