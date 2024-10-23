@@ -9,6 +9,7 @@ import SocialHome from "./routes/SocialHome";
 import ProfilePage from "./routes/ProfilePage";
 import ReadingCorner from "./routes/ReadingCorner";
 import SocialCommunity from "./routes/SocialCommunity";
+import SocialSearch from "./routes/SocialSearch";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
 
         <Route path="social" element={<SocialPage />}>
           <Route path="home" element={<SocialHome />} />
+          <Route path="search" element={<SocialSearch />} />
           <Route path="community" element={<SocialCommunity />} />
           <Route path="profile" element={<ProfilePage />} />
         <Route path="reading-corner" element={<ReadingCorner />} />

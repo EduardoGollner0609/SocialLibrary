@@ -21,6 +21,15 @@ export default function SlideBarSide() {
         </li>
 
         <li className="list-item">
+          <NavLink to="/social/search">
+            <span className="icon">
+            <ion-icon name="search-outline"></ion-icon>
+            </span>
+            <span className="text">Search</span>
+          </NavLink>
+        </li>
+
+        <li className="list-item">
           <NavLink to="/social/community">
             <span className="icon">
             <ion-icon name="people-outline"></ion-icon>
