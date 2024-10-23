@@ -1,0 +1,68 @@
+.card-people-details {
+  background-color: var(--color-primary);
+  border-radius: 20px;
+  height: 90vh;
+  max-width: 850px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: auto;
+  border: 2px solid var(--color-secondary);
+}
+
+.card-people-details h2 {
+  text-align: center;
+  color: var(--color-secondary);
+  font-size: 28px;
+}
+
+.card-people-details img {
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.card-people-details-top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 150px;
+}
+
+.card-people-details-bottom {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid var(--color-secondary);
+  gap: 50px;
+}
+
+.card-people-details-bottom button {
+  border: none;
+  padding: 8px;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card-people-details-btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.people-description {
+  color: var(--color-secondary);
+}
+
+.people-credentials p {
+  font-size: 18px;
+  color: var(--color-secondary);
+}
+
+.people-credentials h3 {
+  font-size: 24px;
+  color: var(--color-secondary);
+}

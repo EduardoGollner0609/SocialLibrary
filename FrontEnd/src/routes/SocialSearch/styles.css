@@ -15,10 +15,6 @@
     display: flex;
   }
   
-  .social-search-description {
-  padding-right: 10px;
-  }
-  
   .social-search-search {
     padding: 20px;
     border-radius: 10px;
