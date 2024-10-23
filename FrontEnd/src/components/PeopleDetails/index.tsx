@@ -7,12 +7,18 @@ export default function PeopleDetails() {
       <h2>GC BarberShop</h2>
       <div className="card-people-details-top">
         <div className="people-credentials">
-          <h3>Username:</h3>
-          <p>GC BarberShop</p>
-          <h3>Nome Completo: </h3>
-          <p>Gerson Souza Kleyton Ramalho</p>
-          <h3>Data de Nascimento: </h3>
-          <p>20/07/2003</p>
+          <div className="credentials-item">
+            <h3>Username:</h3>
+            <p>GC BarberShop</p>
+          </div>
+          <div className="credentials-item">
+            <h3>Nome Completo: </h3>
+            <p>Gerson Souza Kleyton Ramalho</p>
+          </div>
+          <div className="credentials-item">
+            <h3>Data de Nascimento: </h3>
+            <p>20/07/2003</p>
+          </div>
         </div>
 
         <img src={imgPeople} alt="" />

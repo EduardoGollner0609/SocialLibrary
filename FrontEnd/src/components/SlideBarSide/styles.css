@@ -81,14 +81,12 @@
   width: 100%;
 }
 
-
-@media(max-width: 1275px) {
+@media (max-width: 1350px) {
   .slidebar:hover {
     width: 260px;
   }
 }
-@media (max-width: 1120px) {
-
+@media (max-width: 1265px) {
   .logo-title {
     display: none;
   }
@@ -102,7 +100,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 996px) {
   .slidebar {
     display: flex;
     flex-direction: row;

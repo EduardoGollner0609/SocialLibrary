@@ -19,3 +19,9 @@
   font-weight: 500;
   color: var(--color-secondary);
 }
+
+@media (max-width: 1177px) {
+  .card-people {
+    width: 400px;
+  }
+}
