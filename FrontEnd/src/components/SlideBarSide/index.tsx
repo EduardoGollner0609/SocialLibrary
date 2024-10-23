@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./styles.css";
 
 export default function SlideBarSide() {
@@ -38,14 +38,23 @@ export default function SlideBarSide() {
           </NavLink>
         </li>
 
+        <li className="list-item">
+         <a href="">
+            <span className="icon">
+              <ion-icon name="settings-outline"></ion-icon>
+            </span>
+            <span className="text">Configurações</span>
+            </a>
+        </li>
+
         <div className="bottom">
           <li>
-            <a href="">
+            <Link to="/">
               <span className="icon">
                 <ion-icon name="log-out-outline"></ion-icon>
               </span>
               <span className="text">Sair</span>
-            </a>
+            </Link>
           </li>
         </div>
       </ul>

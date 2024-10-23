@@ -1,7 +1,13 @@
 #section-register {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   height: 560px;
-   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  padding: 20px;
+}
+
+@media (max-height: 600px) {
+  #section-register {
+    height: 450px;
+  }
 }

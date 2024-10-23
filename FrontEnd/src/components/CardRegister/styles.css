@@ -7,7 +7,7 @@
   border: 1px solid var(--color-secondary);
   border-radius: 10px;
   box-shadow: 0px 10px 40px #00000036;
-  gap: 20px;
+  gap: 10px;
 }
 
 .card-register h1 {
@@ -27,7 +27,7 @@
 }
 
 .btn-register {
-  margin-top: 10px;
+  margin-top: 5px;
   padding: 10px;
   border-radius: 10px;
   border: none;
