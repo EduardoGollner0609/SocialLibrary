@@ -1,0 +1,21 @@
+.card-community {
+  background-color: var(--color-quartiary);
+  padding: 10px 30px;
+  width: 437px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.card-community img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.card-community p {
+  font-weight: 500;
+  color: var(--color-secondary);
+}

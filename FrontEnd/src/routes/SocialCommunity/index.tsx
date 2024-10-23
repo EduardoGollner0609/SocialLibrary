@@ -1,3 +1,4 @@
+import CardCommunity from "../../components/CardCommunity";
 import CardPeople from "../../components/CardPeople";
 import SearchBar from "../../components/SearchBar";
 import "./styles.css";
@@ -18,17 +19,14 @@ export default function SocialCommunity() {
           <div className="social-comunity-search">
             <h2>Pesquisa</h2>
             <SearchBar />
-            <CardPeople />
-            <CardPeople />
-            <CardPeople />
-            <CardPeople />
-            <CardPeople />
-            <CardPeople />
-            <CardPeople />
-            <CardPeople />
-            <CardPeople />
-            <CardPeople />
-            <CardPeople />
+            <CardCommunity />
+            <CardCommunity />
+            <CardCommunity />
+            <CardCommunity />
+            <CardCommunity />
+            <CardCommunity />
+            <CardCommunity />
+            <CardCommunity />
           </div>
         </div>
       </section>
