@@ -1,6 +1,7 @@
 .card-register {
-  width: 600px;
-  height: 470px;
+  width: 100%;
+  margin-top: 20px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -8,6 +9,12 @@
   border-radius: 10px;
   box-shadow: 0px 10px 40px #00000036;
   gap: 20px;
+}
+
+.card-register h1 {
+  color: var(--color-secondary);
+  text-align: center;
+  font-size: 28px;
 }
 
 .textfield {
@@ -30,15 +37,15 @@
   cursor: pointer;
 }
 
-.card-register .textfield:nth-child(4) {
-  border-bottom: none
+.card-register .textfield:nth-child(5) {
+  border-bottom: none;
 }
 
-.card-register .textfield:nth-child(4) input {
+.card-register .textfield:nth-child(5) input {
   border-bottom: 2px solid var(--color-secondary);
 }
 
-@media(min-height:900px) {
+@media (min-height: 900px) {
   .card-register {
     height: 490px;
   }

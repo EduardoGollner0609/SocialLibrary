@@ -3,6 +3,7 @@ import "./styles.css";
 export default function CardRegister() {
   return (
     <div className="card-register">
+      <h1>Cadastro</h1>
       <div className="textfield">
         <label htmlFor="nome">Nome</label>
         <input type="text" name="nome" placeholder="Nome Completo" required />
