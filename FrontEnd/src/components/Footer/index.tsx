@@ -9,7 +9,7 @@ export default function Footer() {
         <ul className="list-contacts">
           <li className="contact-item">
             <a href="https://www.instagram.com/dudugollner05/">
-              <ion-icon name="logo-instagram"></ion-icon>
+              <ion-icon name="logo-instagram" className="icon"></ion-icon>
               <p>@social_library</p>
             </a>
           </li>

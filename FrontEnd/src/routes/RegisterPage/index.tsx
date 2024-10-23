@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import CardRegister from "../../components/CardRegister";
 import "./styles.css";
+import Footer from "../../components/Footer";
 
 export default function RegisterPage() {
   return (
@@ -19,6 +20,7 @@ export default function RegisterPage() {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }

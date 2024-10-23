@@ -34,7 +34,7 @@ export default function SlideBarSide() {
             <span className="icon">
             <ion-icon name="people-outline"></ion-icon>
             </span>
-            <span className="text">Comunidade</span>
+            <span className="text">Comunidades</span>
           </NavLink>
         </li>
 
