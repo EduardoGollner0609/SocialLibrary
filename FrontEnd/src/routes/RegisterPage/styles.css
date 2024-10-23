@@ -2,12 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   height: 70vh;
+   height: 560px;
    padding: 20px;
-}
-
-@media(max-height: 480px) {
-    #section-register {
-display: none;
-    }
 }

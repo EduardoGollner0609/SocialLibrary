@@ -1,7 +1,6 @@
 .card-register {
   width: 100%;
   margin-top: 20px;
-  height: 500px;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -43,10 +42,4 @@
 
 .card-register .textfield:nth-child(5) input {
   border-bottom: 2px solid var(--color-secondary);
-}
-
-@media (min-height: 900px) {
-  .card-register {
-    height: 490px;
-  }
 }

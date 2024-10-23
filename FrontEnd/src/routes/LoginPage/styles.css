@@ -24,7 +24,7 @@
 
 .login-page-right {
   width: 50vw;
-  height: 80vh;
+  height: 640px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,8 +42,3 @@
 
 
 
-@media (max-height: 400px) {
-#section-login-page {
-    display: none;
-}
-  }
