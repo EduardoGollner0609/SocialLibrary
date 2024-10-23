@@ -1,11 +1,10 @@
 #section-login-page {
-  padding: 20px;
   display: flex;
 }
 
 .login-page-left {
-  height: 80vh;
-  width: 50vw;
+  height: 550px;
+  width: 48vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,8 +12,8 @@
 }
 
 .login-page-left img {
-  width: 70%;
-  min-width: 450px;
+  width: 75%;
+  max-width: 600px;
 }
 
 .login-page-left h3 {
@@ -23,8 +22,8 @@
 }
 
 .login-page-right {
-  width: 50vw;
-  height: 640px;
+  width: 48vw;
+  height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
