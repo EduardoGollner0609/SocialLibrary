@@ -11,11 +11,7 @@ export default function SocialCommunity() {
         </div>
 
         <div className="social-comunity-description-and-search">
-          <div className="social-comunity-description">
-            <h1>Procure amigos do mundo todo!</h1>
-          </div>
-
-          <div className="social-comunity-search">
+        <div className="social-comunity-search">
             <h2>Pesquisa</h2>
             <SearchBar />
             <CardCommunity />
@@ -27,6 +23,11 @@ export default function SocialCommunity() {
             <CardCommunity />
             <CardCommunity />
           </div>
+          <div className="social-comunity-description">
+            <h1>Procure amigos do mundo todo!</h1>
+          </div>
+
+         
         </div>
       </section>
     </main>
