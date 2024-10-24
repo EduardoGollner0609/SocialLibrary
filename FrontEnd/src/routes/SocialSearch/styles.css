@@ -1,3 +1,8 @@
+main {
+  width: 100%;
+  padding: 0px 15px 15px 0px;
+}
+
 .box-title {
   width: 100%;
   height: 60px;
@@ -11,57 +16,29 @@
 }
 
 .social-search-description-and-search {
-  margin-left: 300px;
   display: flex;
+justify-content: space-between;
+}
+
+.social-search-img {
+  height: 10px;
 }
 
 .social-search-search {
   padding: 20px;
   border-radius: 20px;
-  position: absolute;
+  position: static;
   margin-right: 10px;
   right: 0;
   overflow: auto;
   height: 90vh;
   border: 2px solid var(--color-secondary);
   max-height: 750px;
-  border-right: none;
 }
 
 .social-search-search h2 {
   color: var(--color-secondary);
   margin-bottom: 5px;
-}
-
-@media (max-width: 1350px) {
-  .social-search-description-and-search {
-    margin-left: 260px;
-    display: flex;
-  }
-}
-
-@media (max-width: 1265px) {
-  .social-search-description-and-search {
-    margin-left: 150px;
-  }
-}
-
-@media (max-width: 1150px) {
-  .social-search-description-and-search {
-    margin-left: 110px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .social-search-description-and-search {
-    margin-left: 90px;
-  }
-}
-
-@media (max-width: 1075px) {
-  .social-search-description-and-search {
-    margin-left: 70px;
-  }
 }
 
 @media (max-width: 996px) {
@@ -87,10 +64,24 @@
     align-items: center;
     margin-right: 0;
     padding: 0;
-    width: 450px
+    width: 450px;
   }
   .social-search-description-and-search {
     margin-left: 0;
     justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .social-search-description {
+    display: none;
+  }
+
+  .social-search-search h2 {
+    display: none;
+  }
+
+  .search-bar {
+    margin-top: 20px;
   }
 }

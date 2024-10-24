@@ -1,5 +1,5 @@
 .slidebar {
-  position: absolute;
+  position: static;
   width: 60px;
   height: 100vh;
   background-color: var(--color-tertiary);
@@ -29,7 +29,7 @@
 }
 
 .slidebar:hover {
-  width: 300px;
+  width: 320px;
 }
 
 .slidebar:hover .logo-title {
@@ -75,17 +75,6 @@
   letter-spacing: 0.05rem;
 }
 
-.bottom {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-@media (max-width: 1350px) {
-  .slidebar:hover {
-    width: 260px;
-  }
-}
 @media (max-width: 1265px) {
   .logo-title {
     display: none;

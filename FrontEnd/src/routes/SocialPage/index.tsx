@@ -5,8 +5,10 @@ import "./styles.css";
 export default function SocialPage() {
   return (
     <>
-      <SlideBarSide />
-      <Outlet />
+      <div id="social-page">
+        <SlideBarSide />
+        <Outlet />
+      </div>
     </>
   );
 }

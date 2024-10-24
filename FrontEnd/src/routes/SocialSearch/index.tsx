@@ -11,10 +11,6 @@ export default function SocialHome() {
           <h1>Pesquisa</h1>
         </div>
         <div className="social-search-description-and-search">
-          <div className="social-search-description">
-            <PeopleDetails />
-          </div>
-
           <div className="social-search-search">
             <h2>Pesquisa</h2>
             <SearchBar />
@@ -24,6 +20,9 @@ export default function SocialHome() {
             <CardPeople />
             <CardPeople />
             <CardPeople />
+          </div>
+          <div className="social-search-description">
+            <PeopleDetails />
           </div>
         </div>
       </section>

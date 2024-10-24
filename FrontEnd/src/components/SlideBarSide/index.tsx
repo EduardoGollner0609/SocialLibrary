@@ -23,7 +23,7 @@ export default function SlideBarSide() {
         <li className="list-item">
           <NavLink to="/social/search">
             <span className="icon">
-            <ion-icon name="search-outline"></ion-icon>
+              <ion-icon name="search-outline"></ion-icon>
             </span>
             <span className="text">Pesquisa</span>
           </NavLink>
@@ -32,7 +32,7 @@ export default function SlideBarSide() {
         <li className="list-item">
           <NavLink to="/social/community">
             <span className="icon">
-            <ion-icon name="people-outline"></ion-icon>
+              <ion-icon name="people-outline"></ion-icon>
             </span>
             <span className="text">Comunidades</span>
           </NavLink>
@@ -57,24 +57,22 @@ export default function SlideBarSide() {
         </li>
 
         <li className="list-item">
-         <a href="">
+          <a href="">
             <span className="icon">
               <ion-icon name="settings-outline"></ion-icon>
             </span>
             <span className="text">Configurações</span>
-            </a>
+          </a>
         </li>
 
-        <div className="bottom">
-          <li>
-            <Link to="/">
-              <span className="icon">
-                <ion-icon name="log-out-outline"></ion-icon>
-              </span>
-              <span className="text">Sair</span>
-            </Link>
-          </li>
-        </div>
+        <li className="list-item">
+          <Link to="/">
+            <span className="icon">
+              <ion-icon name="log-out-outline"></ion-icon>
+            </span>
+            <span className="text">Sair</span>
+          </Link>
+        </li>
       </ul>
     </div>
   );
