@@ -1,6 +1,7 @@
 main {
   width: 100%;
   padding: 0px 15px 15px 0px;
+  height: 100%;
 }
 
 .box-title {
@@ -33,7 +34,7 @@ main {
   overflow-x: hidden;
   height: 90vh;
   border: 2px solid var(--color-secondary);
-  max-height: 750px;
+  height: 80%;
 }
 
 .social-search-search h2 {
@@ -42,21 +43,11 @@ main {
 }
 
 @media (max-width: 996px) {
-  .social-search-search h2 {
-    display: none;
-  }
-  .social-search-search {
-    padding: 0;
-    position: static;
-  }
-}
-
-@media (max-width: 996px) {
   #section-social-search {
     padding: 0 20px;
   }
   .social-search-search {
-    max-height: 500px;
+    max-height: 900px;
     border: 2px solid var(--color-secondary);
     display: flex;
     flex-direction: column;
@@ -64,6 +55,13 @@ main {
     margin-right: 0;
     padding: 0;
     width: 450px;
+  }
+  .social-search-search h2 {
+    display: none;
+  }
+  .social-search-search {
+    padding: 0;
+    position: static;
   }
   .social-search-description-and-search {
     margin-left: 0;
@@ -75,6 +73,6 @@ main {
   }
 
   main {
-    padding: 0 0 15px 0
+    padding: 0 0 100px 0;
   }
 }
