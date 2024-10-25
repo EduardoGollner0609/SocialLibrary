@@ -42,11 +42,13 @@
   
   .card-community-details-bottom button {
     border: none;
-    padding: 8px;
+    padding: 10px;
+    font-size: 18px;
     color: var(--color-primary);
     background-color: var(--color-secondary);
     border-radius: 10px;
     cursor: pointer;
+    min-width: 150px;
   }
   
   .card-community-details-btns {
