@@ -21,6 +21,8 @@ export default function SocialCommunity() {
             <CardCommunity />
             <CardCommunity />
             <CardCommunity />
+            <CardCommunity />
+            <CardCommunity />
           </div>
           <div className="social-community-description">
             <CommunityDetails />

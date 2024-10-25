@@ -6,7 +6,8 @@ main {
 
 .social-community-description-and-search {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-community-img {
@@ -22,7 +23,8 @@ main {
   overflow-x: hidden;
   height: 90vh;
   border: 2px solid var(--color-secondary);
-  height: 80%;
+  height: 85vh;
+  max-height: 750px;
 }
 
 .social-community-search h2 {

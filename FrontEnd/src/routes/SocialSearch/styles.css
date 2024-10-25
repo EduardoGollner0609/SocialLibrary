@@ -6,7 +6,8 @@ main {
 
 .social-search-description-and-search {
   display: flex;
- gap: 20%;
+ justify-content: center;
+ align-items: center;
 }
 
 .social-search-img {
@@ -20,9 +21,10 @@ main {
   margin-right: 10px;
   right: 0;
   overflow-x: hidden;
-  height: 90vh;
+  height: 80vh;
   border: 2px solid var(--color-secondary);
-  height: 80%;
+  height: 85vh;
+  max-height: 750px;
 }
 
 .social-search-search h2 {
