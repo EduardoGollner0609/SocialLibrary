@@ -2,10 +2,18 @@ import "./styles.css";
 import imgCommunity from "../../assets/foto-gc.jpg";
 
 export default function PeopleDetails() {
+
+  function cardCommunityDetailsClose() {
+    const cardCommunityDetails = document.querySelector(".card-community-details");
+    if (cardCommunityDetails != null) {
+      cardCommunityDetails.classList.remove("card-community-active");
+    }
+  }
   return (
     <div className="card-community-details">
       <button
         className="card-community-details-btn-exit"
+        onClick={cardCommunityDetailsClose}
       >
         <ion-icon name="arrow-undo-outline"></ion-icon>
         voltar
