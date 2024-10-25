@@ -1,48 +1,59 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./styles.css";
 
 export default function CardStopWatch() {
-  const [time, setTime] = useState(0);
-  const [isRunning, setIsRunning] = useState(false);
+  const [time, setTime] = useState<number>(0);
+  const [isRunning, setIsRunning] = useState<boolean>(false);
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-expect-error
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  useEffect(() => {
-    let interval = null;
-
-    if (isRunning) {
-      interval = setInterval(() => {
-        setTime((prevTime) => prevTime + 1);
-      }, 1000);
-    } else if (!isRunning && time !== 0) {
-      clearInterval(interval || undefined);
+  const startTimer = (): void => {
+    if (!isRunning) {
+      setIsRunning(true);
+      intervalRef.current = setInterval(() => {
+        setTime((prevTime) => prevTime + 10);
+      }, 10);
     }
-
-    return () => clearInterval(interval || undefined);
-  }, [isRunning, time]);
-
-  const formatTime = (time: number) => {
-    const getSeconds = `0${time % 60}`.slice(-2);
-    const minutes = Math.floor(time / 60);
-    const getMinutes = `0${minutes % 60}`.slice(-2);
-    const getHours = `0${Math.floor(time / 3600)}`.slice(-2);
-
-    return `${getHours}:${getMinutes}:${getSeconds}`;
   };
 
+  const stopTimer = (): void => {
+    if (isRunning) {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+      setIsRunning(false);
+    }
+  };
+
+  const resetTimer = (): void => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    setIsRunning(false);
+    setTime(0);
+  };
+
+  const formatTime = (time: number): string => {
+    const centiseconds = `0${Math.floor((time % 1000) / 10)}`.slice(-2);
+    const seconds = `0${Math.floor((time / 1000) % 60)}`.slice(-2);
+    const minutes = `0${Math.floor((time / 60000) % 60)}`.slice(-2);
+    const hours = `0${Math.floor(time / 3600000)}`.slice(-2);
+    return `${hours}:${minutes}:${seconds}:${centiseconds}`;
+  };
+
+  useEffect(() => {
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, []);
   return (
     <div className="card-stop-watch">
-      <h1>Cronômetro</h1>
-      <h2 id="watch"> {formatTime(time)}</h2>
+      <h2>Cronômetro</h2>
+      <div className="card-stop-watch-time">
+        <h2 id="watch"> {formatTime(time)}</h2>
+      </div>
+
       <div className="card-stop-watch-btns">
-        <button onClick={() => setIsRunning(true)}>Iniciar</button>
-        <button onClick={() => setIsRunning(false)}>Pausar</button>
-        <button
-          onClick={() => {
-            setTime(0);
-            setIsRunning(false);
-          }}
-        >
-          Resetar
-        </button>
+        <button onClick={startTimer}>Iniciar</button>
+        <button onClick={stopTimer}>Pausar</button>
+        <button onClick={resetTimer}>Resetar</button>
       </div>
     </div>
   );

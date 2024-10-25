@@ -1,24 +1,28 @@
 .card-stop-watch {
-    border: 2px solid var(--color-secondary);
-    max-width: 500px;
-    padding: 20px;
-    border-radius: 20px;
-    color: var(--color-secondary);
-    text-align: center;
+  border: 2px solid var(--color-secondary);
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  color: var(--color-secondary);
+}
+
+.card-stop-watch-time {
+  display: flex;
+  justify-content: center;
 }
 
 .card-stop-watch-btns {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
 }
 
-.card-stop-watch-btns button{
-    border-radius: 10px;
-    border: none;
-padding: 5px;
-background-color: var(--color-secondary);
-color: var(--color-primary);
-font-size: 1rem;
-margin: 10px 0;
+.card-stop-watch-btns button {
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  font-size: 1rem;
+  margin: 10px 0;
 }
