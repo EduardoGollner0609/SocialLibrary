@@ -11,6 +11,20 @@
     overflow: auto;
     border: 2px solid var(--color-secondary);
   }
+
+  .card-community-details-btn-exit {
+    max-width: 140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 30px;
+  border: none;
+  border: 1px solid var(--color-secondary);
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  }
   
   .card-community-details h2 {
     text-align: center;
