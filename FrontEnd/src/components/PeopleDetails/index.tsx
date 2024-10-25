@@ -4,6 +4,10 @@ import imgPeople from "../../assets/foto-gc.jpg";
 export default function PeopleDetails() {
   return (
     <div className="card-people-details">
+      <button className="card-people-details-btn-exit">
+      <ion-icon name="arrow-undo-outline"></ion-icon>
+ voltar
+      </button>
       <h2>GC BarberShop</h2>
       <div className="card-people-details-top">
         <div className="people-credentials">
