@@ -1,4 +1,5 @@
 import CardCommunity from "../../components/CardCommunity";
+import CommunityDetails from "../../components/CommunityDetails";
 import SearchBar from "../../components/SearchBar";
 import "./styles.css";
 
@@ -24,7 +25,7 @@ export default function SocialCommunity() {
             <CardCommunity />
           </div>
           <div className="social-comunity-description">
-            <h1>Procure amigos do mundo todo!</h1>
+<CommunityDetails />
           </div>
 
          
