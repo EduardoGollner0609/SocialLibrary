@@ -10,6 +10,11 @@
   gap: 20px;
   overflow: auto;
   border: 2px solid var(--color-secondary);
+  display: none;
+}
+
+.card-active {
+display: flex;
 }
 
 .card-people-details h2 {
