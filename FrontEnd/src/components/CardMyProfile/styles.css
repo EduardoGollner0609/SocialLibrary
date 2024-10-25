@@ -1,6 +1,7 @@
 .card-my-profile {
-  width: 500px;
-  height: 550px;
+  width: 60%;
+  height: 80%;
+  max-height: 900px;
   border: 2px solid var(--color-secondary);
   border-radius: 20px;
   padding: 20px;
@@ -46,4 +47,16 @@
 
 .link-edit-my-profile:hover {
   border: 2px solid var(--color-secondary);
+}
+
+@media(max-width: 996px) {
+  .card-my-profile {
+    width: 80%;
+    height: 90%;
+    max-height: 900px;
+    border: 2px solid var(--color-secondary);
+    border-radius: 20px;
+    padding: 20px;
+    overflow-x: hidden;
+  }
 }
