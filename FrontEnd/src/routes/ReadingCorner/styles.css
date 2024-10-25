@@ -1,0 +1,8 @@
+#section-reading-corner {
+    height: 100%;
+}
+
+#section-reading-corner h1{
+ text-align: center;
+ color: var(--color-secondary);
+}
