@@ -24,3 +24,10 @@ border: 2px solid var(--color-secondary);
   font-weight: 500;
   color: var(--color-secondary);
 }
+
+@media (max-width: 996px) {
+  .card-community {
+    padding: 10px 15px;
+    width: 370px;
+  }
+}

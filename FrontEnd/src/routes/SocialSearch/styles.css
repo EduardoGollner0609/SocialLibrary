@@ -17,7 +17,7 @@ main {
 
 .social-search-description-and-search {
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
 }
 
 .social-search-img {
@@ -30,7 +30,7 @@ justify-content: space-between;
   position: static;
   margin-right: 10px;
   right: 0;
-  overflow: auto;
+  overflow-x: hidden;
   height: 90vh;
   border: 2px solid var(--color-secondary);
   max-height: 750px;
@@ -42,13 +42,12 @@ justify-content: space-between;
 }
 
 @media (max-width: 996px) {
-  .social-search-search {
-    padding: 10px;
-    position: static;
+  .social-search-search h2 {
+    display: none;
   }
-
-  .social-search-description-and-search {
-    gap: 20px;
+  .social-search-search {
+    padding: 0;
+    position: static;
   }
 }
 
@@ -70,6 +69,12 @@ justify-content: space-between;
     margin-left: 0;
     justify-content: center;
   }
+
+  .search-bar {
+    margin-top: 20px;
+  }
+
+  main {
+    padding: 0 0 15px 0
+  }
 }
-
-

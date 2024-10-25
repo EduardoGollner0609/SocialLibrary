@@ -11,7 +11,7 @@
 }
 
 .card-people:hover {
-border: 2px solid var(--color-secondary);
+  border: 2px solid var(--color-secondary);
 }
 .card-people img {
   width: 60px;
@@ -24,15 +24,9 @@ border: 2px solid var(--color-secondary);
   color: var(--color-secondary);
 }
 
-@media (max-width: 1177px) {
+@media (max-width: 996px) {
   .card-people {
-    width: 400px;
-  }
-}
-
-@media(max-width: 996px) {
-  .card-people {
-      padding: 10px 15px;
-    width: 350px;
+    padding: 10px 15px;
+    width: 370px;
   }
 }
