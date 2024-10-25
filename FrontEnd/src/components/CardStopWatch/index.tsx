@@ -47,7 +47,7 @@ export default function CardStopWatch() {
     <div className="card-stop-watch">
       <h2>Cronômetro</h2>
       <div className="card-stop-watch-time">
-        <h2 id="watch"> {formatTime(time)}</h2>
+        <h3 id="watch"> {formatTime(time)}</h3>
       </div>
 
       <div className="card-stop-watch-btns">
