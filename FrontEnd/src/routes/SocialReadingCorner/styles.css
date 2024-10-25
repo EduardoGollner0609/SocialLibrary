@@ -4,10 +4,19 @@ main {
 
 #section-reading-corner {
   height: 100%;
-  padding: 0 20px;
 }
 
 #section-reading-corner h1 {
   text-align: center;
   color: var(--color-secondary);
+}
+
+.cards-reading-corner-top {
+  display: flex;
+  gap: 20px;
+}
+
+.cards-reading-corner-container {
+  display: flex;
+  justify-content: center;
 }

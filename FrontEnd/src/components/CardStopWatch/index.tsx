@@ -49,7 +49,6 @@ export default function CardStopWatch() {
       <div className="card-stop-watch-time">
         <h3 id="watch"> {formatTime(time)}</h3>
       </div>
-
       <div className="card-stop-watch-btns">
         <button onClick={startTimer}>Iniciar</button>
         <button onClick={stopTimer}>Pausar</button>

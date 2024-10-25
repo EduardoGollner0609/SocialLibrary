@@ -1,3 +1,4 @@
+import CardReadingCornerDescription from "../../components/CardReadingCornerDescription";
 import CardStopWatch from "../../components/CardStopWatch";
 import "./styles.css";
 
@@ -8,8 +9,11 @@ export default function ReadingCorner() {
         <div className="box-title">
           <h1>Cantinho da leitura</h1>
         </div>
-        <div>
-          <CardStopWatch />
+        <div className="cards-reading-corner-container">
+          <div className="cards-reading-corner-top">
+            <CardReadingCornerDescription />
+            <CardStopWatch />
+          </div>
         </div>
       </section>
     </main>

@@ -1,21 +1,25 @@
 .card-stop-watch {
   border: 2px solid var(--color-secondary);
-  max-width: 450px;
-  padding: 20px;
+  width: 300px;
   border-radius: 20px;
   color: var(--color-secondary);
+  max-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-stop-watch h2 {
-text-align: center;
-font-size: 24px;
-margin-bottom: 5px;
-text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
 }
 
 .card-stop-watch h3 {
   font-size: 22px;
-  }
+}
 .card-stop-watch-time {
   display: flex;
   justify-content: center;
