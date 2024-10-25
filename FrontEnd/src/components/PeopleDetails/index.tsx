@@ -2,9 +2,16 @@ import "./styles.css";
 import imgPeople from "../../assets/foto-gc.jpg";
 
 export default function PeopleDetails() {
+
+  function cardPeopleDetailsClose() {
+    const cardPeopleDetails = document.querySelector(".card-people-details");
+    if (cardPeopleDetails != null) {
+      cardPeopleDetails.classList.remove("card-active");
+    }
+  }
   return (
     <div className="card-people-details">
-      <button className="card-people-details-btn-exit">
+      <button className="card-people-details-btn-exit" onClick={cardPeopleDetailsClose}>
       <ion-icon name="arrow-undo-outline"></ion-icon>
  voltar
       </button>
