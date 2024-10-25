@@ -6,7 +6,7 @@ import MoreDetails from "./routes/MoreDetails";
 import RegisterPage from "./routes/RegisterPage";
 import SocialPage from "./routes/SocialPage";
 import SocialHome from "./routes/SocialHome";
-import ProfilePage from "./routes/ProfilePage";
+import ProfilePage from "./routes/SocialProfile";
 import ReadingCorner from "./routes/ReadingCorner";
 import SocialCommunity from "./routes/SocialCommunity";
 import SocialSearch from "./routes/SocialSearch";
