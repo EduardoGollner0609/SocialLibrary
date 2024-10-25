@@ -72,16 +72,4 @@ justify-content: space-between;
   }
 }
 
-@media (max-width: 900px) {
-  .social-search-description {
-    display: none;
-  }
 
-  .social-search-search h2 {
-    display: none;
-  }
-
-  .search-bar {
-    margin-top: 20px;
-  }
-}
