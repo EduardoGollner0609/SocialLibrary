@@ -48,7 +48,7 @@
     background-color: var(--color-secondary);
     border-radius: 10px;
     cursor: pointer;
-    min-width: 120px;
+    min-width: 150px;
   }
   
   .card-community-details-btns {
