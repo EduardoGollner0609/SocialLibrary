@@ -1,7 +1,7 @@
 .card-my-profile {
   width: 60%;
-  height: 95%;
-  max-height: 900px;
+  height: 85vh;
+  max-height: 750px;
   border: 2px solid var(--color-secondary);
   border-radius: 20px;
   padding: 20px;
@@ -32,6 +32,14 @@
   color: var(--color-secondary);
 }
 
+.card-my-profile-bottom-item h3 {
+  font-size: 24px;
+}
+
+.card-my-profile-bottom-item p {
+  font-size: 18px;
+}
+
 .link-edit-my-profile {
   color: var(--color-secondary);
   display: flex;
@@ -49,7 +57,7 @@
   border: 2px solid var(--color-secondary);
 }
 
-@media(max-width: 996px) {
+@media (max-width: 996px) {
   .card-my-profile {
     width: 80%;
     height: 90%;
@@ -58,5 +66,13 @@
     border-radius: 20px;
     padding: 20px;
     overflow-x: hidden;
+  }
+
+  .card-my-profile-bottom-item h3 {
+    font-size: 22px;
+  }
+
+  .card-my-profile-bottom-item p {
+    font-size: 16px;
   }
 }

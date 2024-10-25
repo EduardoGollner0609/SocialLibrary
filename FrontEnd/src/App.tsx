@@ -7,7 +7,7 @@ import RegisterPage from "./routes/RegisterPage";
 import SocialPage from "./routes/SocialPage";
 import SocialHome from "./routes/SocialHome";
 import ProfilePage from "./routes/SocialProfile";
-import ReadingCorner from "./routes/ReadingCorner";
+import ReadingCorner from "./routes/SocialReadingCorner";
 import SocialCommunity from "./routes/SocialCommunity";
 import SocialSearch from "./routes/SocialSearch";
 
