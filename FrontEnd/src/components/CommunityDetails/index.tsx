@@ -4,6 +4,12 @@ import imgCommunity from "../../assets/foto-gc.jpg";
 export default function PeopleDetails() {
   return (
     <div className="card-community-details">
+      <button
+        className="card-community-details-btn-exit"
+      >
+        <ion-icon name="arrow-undo-outline"></ion-icon>
+        voltar
+      </button>
       <h2>GC BarberShop</h2>
       <div className="card-community-details-top">
         <div className="community-credentials">
