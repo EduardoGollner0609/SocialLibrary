@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import "./styles.css";
 
 export default function CardStopWatch() {
-  const [time, setTime] = useState(0); 
-  const [isRunning, setIsRunning] = useState(false); 
+  const [time, setTime] = useState(0);
+  const [isRunning, setIsRunning] = useState(false);
 
   useEffect(() => {
     let interval = null;
@@ -30,16 +30,20 @@ export default function CardStopWatch() {
 
   return (
     <div className="card-stop-watch">
+      <h1>Cronômetro</h1>
       <h2 id="watch"> {formatTime(time)}</h2>
-      <button onClick={() => setIsRunning(true)}>
-        Iniciar
-      </button>
-      <button onClick={() => setIsRunning(false)}>
-        Pausar
-      </button>
-      <button onClick={() => { setTime(0); setIsRunning(false); }}>
-        Resetar
-      </button>
+      <div className="card-stop-watch-btns">
+        <button onClick={() => setIsRunning(true)}>Iniciar</button>
+        <button onClick={() => setIsRunning(false)}>Pausar</button>
+        <button
+          onClick={() => {
+            setTime(0);
+            setIsRunning(false);
+          }}
+        >
+          Resetar
+        </button>
+      </div>
     </div>
   );
 }
