@@ -11,8 +11,8 @@ export default function SocialCommunity() {
           <h1>Comunidade</h1>
         </div>
 
-        <div className="social-comunity-description-and-search">
-        <div className="social-comunity-search">
+        <div className="social-community-description-and-search">
+          <div className="social-community-search">
             <h2>Pesquisa</h2>
             <SearchBar />
             <CardCommunity />
@@ -24,11 +24,9 @@ export default function SocialCommunity() {
             <CardCommunity />
             <CardCommunity />
           </div>
-          <div className="social-comunity-description">
-<CommunityDetails />
+          <div className="social-community-description">
+            <CommunityDetails />
           </div>
-
-         
         </div>
       </section>
     </main>
