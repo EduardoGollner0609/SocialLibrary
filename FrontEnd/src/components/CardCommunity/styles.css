@@ -7,6 +7,11 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.card-community:hover {
+border: 2px solid var(--color-secondary);
 }
 
 .card-community img {

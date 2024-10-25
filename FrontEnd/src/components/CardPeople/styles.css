@@ -10,6 +10,9 @@
   cursor: pointer;
 }
 
+.card-people:hover {
+border: 2px solid var(--color-secondary);
+}
 .card-people img {
   width: 60px;
   height: 60px;

@@ -27,6 +27,11 @@ background-color: var(--color-primary);
 color: var(--color-secondary);
 }
 
+.card-people-details-btn-exit:hover {
+  border: 2px solid var(--color-secondary);
+  cursor: pointer;
+}
+
 .card-active {
   display: flex;
 }
