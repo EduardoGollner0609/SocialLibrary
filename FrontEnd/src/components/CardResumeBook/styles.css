@@ -16,7 +16,7 @@
 .card-resume-book form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .form-item {
@@ -64,4 +64,5 @@
   background-color: var(--color-primary);
   color: var(--color-secondary);
   cursor: pointer;
+  height: 35px;
 }

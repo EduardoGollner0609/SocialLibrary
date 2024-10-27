@@ -1,0 +1,50 @@
+.card-resume {
+  border: 2px solid var(--color-secondary);
+  padding: 10px;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.card-resume-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-resume h3 {
+  font-size: 18px;
+  color: var(--color-secondary);
+}
+
+.card-resume-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card-resume-bottom button {
+  border: none;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-open {
+  background-color: green;
+  color: var(--color-primary);
+}
+
+.btn-open:hover {
+  background-color: rgb(4, 94, 4);
+}
+
+.btn-remove {
+  background-color: #e74c3c;
+  color: var(--color-primary);
+}
+
+.btn-remove:hover {
+  background-color: #c0392b;
+}
