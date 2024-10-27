@@ -1,4 +1,5 @@
 import CardReadingCornerDescription from "../../components/CardReadingCornerDescription";
+import CardResumeBook from "../../components/CardResumeBook";
 import CardStopWatch from "../../components/CardStopWatch";
 import "./styles.css";
 
@@ -13,6 +14,7 @@ export default function ReadingCorner() {
           <div className="cards-reading-corner-top">
             <CardReadingCornerDescription />
             <CardStopWatch />
+            <CardResumeBook />
           </div>
         </div>
       </section>
