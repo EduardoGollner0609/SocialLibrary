@@ -11,12 +11,16 @@ main {
   color: var(--color-secondary);
 }
 
-.cards-reading-corner-top {
+.cards-reading-corner-left {
   display: flex;
-  gap: 20px;
+  gap: 15px;
+  flex-wrap: wrap;
+  max-width: 620px;
 }
 
 .cards-reading-corner-container {
   display: flex;
   justify-content: center;
+  gap: 15px;
+ height: 580px;
 }

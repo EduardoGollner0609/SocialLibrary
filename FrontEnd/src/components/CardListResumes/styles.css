@@ -1,0 +1,6 @@
+.card-list-resumes {
+  border: 2px solid var(--color-secondary);
+  width: 100%;
+  height: 432px;
+  border-radius: 20px;
+}

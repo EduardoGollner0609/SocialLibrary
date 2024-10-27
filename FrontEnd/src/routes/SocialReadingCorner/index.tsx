@@ -1,3 +1,4 @@
+import CardListResumes from "../../components/CardListResumes";
 import CardReadingCornerDescription from "../../components/CardReadingCornerDescription";
 import CardResumeBook from "../../components/CardResumeBook";
 import CardStopWatch from "../../components/CardStopWatch";
@@ -11,11 +12,14 @@ export default function ReadingCorner() {
           <h1>Cantinho da leitura</h1>
         </div>
         <div className="cards-reading-corner-container">
-          <div className="cards-reading-corner-top">
+          <div className="cards-reading-corner-left">
             <CardReadingCornerDescription />
             <CardStopWatch />
-            <CardResumeBook />
-          </div>
+            <CardListResumes />
+            </div>
+            <div className="cards-reading-corner-right">
+              <CardResumeBook />
+            </div>
         </div>
       </section>
     </main>
