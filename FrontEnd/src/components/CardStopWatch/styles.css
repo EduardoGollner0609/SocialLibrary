@@ -36,9 +36,10 @@
   border-radius: 10px;
   border: none;
   padding: 5px;
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
+  color: var(--color-secondary);
   font-size: 1rem;
   margin: 10px 0;
   cursor: pointer;
+  border: 2px solid var(--color-secondary);
+  background-color: var(--color-primary);
 }

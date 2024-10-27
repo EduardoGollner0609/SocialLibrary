@@ -32,19 +32,19 @@
 }
 
 .btn-open {
-  background-color: green;
+  background-color: var(--color-btn-green);
   color: var(--color-primary);
 }
 
 .btn-open:hover {
-  background-color: rgb(4, 94, 4);
+  background-color: var(--color-btn-green-selected);
 }
 
 .btn-remove {
-  background-color: #e74c3c;
+  background-color: var(--color-btn-red);
   color: var(--color-primary);
 }
 
 .btn-remove:hover {
-  background-color: #c0392b;
+  background-color: var(--color-btn-red-selected);
 }

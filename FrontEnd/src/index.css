@@ -5,7 +5,13 @@
   --color-secondary: #313926;
   --color-tertiary: #f9f6eb;
   --color-quartiary: #f5f0dd;
+
+  --color-btn-green: #07af1d;
+  --color-btn-green-selected: #037512;
+  --color-btn-red: #e74c3c;
+  --color-btn-red-selected: #c0392b;
 }
+
 * {
   margin: 0;
   padding: 0;
