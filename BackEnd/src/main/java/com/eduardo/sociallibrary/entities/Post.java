@@ -1,9 +1,12 @@
 package com.eduardo.sociallibrary.entities;
 
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
 
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 
 public class Post {
 
@@ -14,6 +17,9 @@ public class Post {
 	@ManyToOne
 	@JoinColumn(name = "author_id")
 	private User author;
+
+	@OneToMany(mappedBy = "post")
+	private List<Comment> comments = new ArrayList<>();
 
 	public Post() {
 	}
@@ -55,6 +61,14 @@ public class Post {
 
 	public void setAuthor(User author) {
 		this.author = author;
+	}
+
+	public void addComent(Comment comment) {
+		this.comments.add(comment);
+	}
+
+	public List<Comment> getComments() {
+		return comments;
 	}
 
 }
