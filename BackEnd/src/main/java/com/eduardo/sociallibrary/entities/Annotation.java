@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -16,12 +18,17 @@ public class Annotation {
 	private String book;
 	private String summary;
 
+	@ManyToOne
+	@JoinColumn(name = "user_id")
+	private User user;
+
 	public Annotation() {
 	}
 
-	public Annotation(Long id, String book, String summary) {
+	public Annotation(Long id, String book, String summary, User user) {
 		this.book = book;
 		this.summary = summary;
+		this.user = user;
 	}
 
 	public Long getId() {
@@ -46,6 +53,14 @@ public class Annotation {
 
 	public void setSummary(String summary) {
 		this.summary = summary;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 }

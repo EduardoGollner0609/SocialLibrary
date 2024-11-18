@@ -1,12 +1,14 @@
 package com.eduardo.sociallibrary.entities;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -23,13 +25,16 @@ public class User {
 	private String password;
 	private String biography;
 	private String favoriteLiteraryGenre;
-	private List<String> books;
+	private List<String> books = new ArrayList<>();
+
+	@OneToMany(mappedBy = "user")
+	private List<Annotation> annotations = new ArrayList<>();
 
 	public User() {
 	}
 
 	public User(Long id, String name, LocalDate birthDate, String email, String username, String password,
-			String biography, String favoriteLiteraryGenre, List<String> books) {
+			String biography, String favoriteLiteraryGenre) {
 		this.name = name;
 		this.birthDate = birthDate;
 		this.email = email;
@@ -37,7 +42,6 @@ public class User {
 		this.password = password;
 		this.biography = biography;
 		this.favoriteLiteraryGenre = favoriteLiteraryGenre;
-		this.books = books;
 	}
 
 	public Long getId() {
@@ -108,8 +112,16 @@ public class User {
 		return books;
 	}
 
-	public void setBooks(List<String> books) {
-		this.books = books;
+	public void addBook(String book) {
+		this.books.add(book);
+	}
+
+	public List<Annotation> getAnnotations() {
+		return annotations;
+	}
+
+	public void addAnnotation(Annotation annotation) {
+		this.annotations.add(annotation);
 	}
 
 }
