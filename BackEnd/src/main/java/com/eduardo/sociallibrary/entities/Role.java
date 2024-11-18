@@ -1,9 +1,17 @@
 package com.eduardo.sociallibrary.entities;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import jakarta.persistence.ManyToMany;
+
 public class Role {
 
 	private Long id;
 	private String authority;
+
+	@ManyToMany
+	private Set<User> users = new HashSet<>();
 
 	public Role() {
 	}
