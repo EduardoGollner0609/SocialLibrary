@@ -18,10 +18,11 @@ public class Post {
 	public Post() {
 	}
 
-	public Post(String message, Instant moment, Integer likes) {
+	public Post(String message, Instant moment, Integer likes, User author) {
 		this.message = message;
 		this.moment = moment;
 		this.likes = likes;
+		this.author = author;
 	}
 
 	public String getMessage() {
@@ -46,6 +47,14 @@ public class Post {
 
 	public void setLikes(Integer likes) {
 		this.likes = likes;
+	}
+
+	public User getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(User author) {
+		this.author = author;
 	}
 
 }

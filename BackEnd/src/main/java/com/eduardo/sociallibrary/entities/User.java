@@ -30,6 +30,7 @@ public class User {
 	@OneToMany(mappedBy = "user")
 	private List<Annotation> annotations = new ArrayList<>();
 
+	@OneToMany(mappedBy = "author")
 	private List<Post> posts = new ArrayList<>();
 
 	public User() {
@@ -124,6 +125,14 @@ public class User {
 
 	public void addAnnotation(Annotation annotation) {
 		this.annotations.add(annotation);
+	}
+
+	public List<Post> getPosts() {
+		return posts;
+	}
+
+	public void addPosts(Post post) {
+		this.posts.add(post);
 	}
 
 }
