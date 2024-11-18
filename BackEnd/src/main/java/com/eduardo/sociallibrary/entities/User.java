@@ -3,8 +3,19 @@ package com.eduardo.sociallibrary.entities;
 import java.time.LocalDate;
 import java.util.List;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "tb_user")
 public class User {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 	private String name;
 	private LocalDate birthDate;
 	private String email;
@@ -17,8 +28,8 @@ public class User {
 	public User() {
 	}
 
-	public User(String name, LocalDate birthDate, String email, String username, String password, String biography,
-			String favoriteLiteraryGenre, List<String> books) {
+	public User(Long id, String name, LocalDate birthDate, String email, String username, String password,
+			String biography, String favoriteLiteraryGenre, List<String> books) {
 		this.name = name;
 		this.birthDate = birthDate;
 		this.email = email;
@@ -27,6 +38,14 @@ public class User {
 		this.biography = biography;
 		this.favoriteLiteraryGenre = favoriteLiteraryGenre;
 		this.books = books;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getName() {
