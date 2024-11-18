@@ -16,6 +16,7 @@ main {
   gap: 15px;
   flex-wrap: wrap;
   max-width: 620px;
+  justify-content: center;
 }
 
 .cards-reading-corner-container {
