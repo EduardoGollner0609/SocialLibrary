@@ -30,6 +30,8 @@ public class User {
 	@OneToMany(mappedBy = "user")
 	private List<Annotation> annotations = new ArrayList<>();
 
+	private List<Post> posts = new ArrayList<>();
+
 	public User() {
 	}
 

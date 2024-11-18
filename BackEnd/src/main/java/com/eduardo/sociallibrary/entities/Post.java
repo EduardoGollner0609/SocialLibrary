@@ -2,11 +2,18 @@ package com.eduardo.sociallibrary.entities;
 
 import java.time.Instant;
 
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+
 public class Post {
 
 	private String message;
 	private Instant moment;
 	private Integer likes;
+
+	@ManyToOne
+	@JoinColumn(name = "author_id")
+	private User author;
 
 	public Post() {
 	}
